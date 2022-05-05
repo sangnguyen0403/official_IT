@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/359626c004.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar_white">
+        <img src="images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="#" >Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register_btn">View Credit</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="container">
+        <div class="list_container">
+            <div class="left_col">
+                <p>200+ Options</p>
+                <h1>Recommendations Places</h1>
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/tree1.webp" alt="">
+                    </div>
+                    <div class="house_info">
+                        <p>Twinclass Treehouse in Tudor in the Pines</p>
+                        <a href="/house.html"><h3>Twinclass Treehouse</h3></a>
+                        <p>2 Bedroom / 2 Bathroom / Wifi / Kitchen</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house_price">
+                            <p>4 Guest</p>
+                            <h4>250 <span>points</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/image-s2.png" alt="">
+                    </div>
+                    <div class="house_info">
+                        <p>Private Villa in San Francisco</p>
+                        <h3>Deluxe Queen Room With Street View</h3>
+                        <p>1 Bedroom / 1 Bathroom / Wifi / Kitchen</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house_price">
+                            <p>2 Guest</p>
+                            <h4>400 <span>points</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/image-s3.png" alt="">
+                    </div>
+                    <div class="house_info">
+                        <p>Private Villa in San Francisco</p>
+                        <h3>Deluxe Queen Room With Street View</h3>
+                        <p>1 Bedroom / 1 Bathroom / Wifi / Kitchen</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house_price">
+                            <p>2 Guest</p>
+                            <h4>400 <span>points</span></h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/image-s4.png" alt="">
+                    </div>
+                    <div class="house_info">
+                        <p>Private Villa in San Francisco</p>
+                        <h3>Deluxe Queen Room With Street View</h3>
+                        <p>1 Bedroom / 1 Bathroom / Wifi / Kitchen</p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-alt"></i>
+                        <i class="far fa-star"></i>
+                        <div class="house_price">
+                            <p>2 Guest</p>
+                            <h4>400 <span>points</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_col">
+                <div class="side_bar">
+                    <h2> Select Filter</h2>
+                    <h3>Property Type</h3>
+                    <div class="filter">
+                        <input id="filter_btn" type="checkbox"><p>Villa</p> <span id="filter_mes">(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Hoster</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Flat</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>House</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Guest</p> <span>(0)</span>
+                    </div>
+                    <h3>Amenitites</h3>
+                    <div class="filter">
+                        <input type="checkbox"><p>Air Conditioning</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Wifi</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Gym</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Swimming Pool</p> <span>(0)</span>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Kitchen</p> <span>(0)</span>
+                    </div>
+
+                    <div class="side_bar-link">
+                        <a href="#">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <img src="images/arrow.png" alt="">
+            <span class="current">1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>&middot; &middot; &middot; &middot; </span>
+            <span>20</span>
+            <img src="images/arrow.png" class="right_arrow">
+        </div>
+
+        <div class="footer">
+            <a href="#" ><i class="fa-brands fa-facebook-square"></i></a>
+            <a href="#" ><i class="fa-brands fa-instagram-square"></i></i></a>
+            <a href="#" ><i class="fa-brands fa-twitter-square"></i></a>
+            <hr>
+            <p>Copyright something will be finish later</p>
+        </div>
+    </div>
+
+    
+
+
+    <script>
+        var navVar = document.getElementById("navbar");
+        const box = document.getElementById("filter_btn");
+
+        function togglebtn(){
+            navbar.classList.toggle("hidemenu");
+        }
+
+        box.addEventListener('change',(event) =>{
+            if (event.currentTarget.checked) {
+                let message = document.getElementById('filter_mes');
+                message.innerText = '(50)'
+            }else{
+                let message = document.getElementById('filter_mes');
+                message.innerText = '(0)'
+            }
+        })
+
+    </script>
+</body>
+</html>

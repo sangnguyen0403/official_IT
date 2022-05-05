@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/359626c004.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+        <div class="header">
+            <nav id="navbar">
+                <img src="images/logo.png" class="logo" alt="">
+                <ul class="nav-links">
+                    <li><a href="#" >Popular Places</a></li>
+                    <li><a href="#">Travel Outside</a></li>
+                    <li><a href="#">Online Packages</a></li>
+                </ul>
+                <button class="main-btn"><a href="#" class="register_btn">Register Now</a></button>
+                <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+            </nav>
+
+            <div class="container">
+                <h1>Find Your Next House </h1>
+                <div class="search_bar">
+                    <form action="/listing.html" autocomplete="off">
+                        <div class="location-input">
+                            <label>Location</label>
+                            <input class="location_input" id="input" type="text" placeholder="Where are you going?">
+                        </div>              
+                        <ul class="list"></ul>
+                        
+                        <div class="other-input">
+                            <label>Check In</label>
+                            <input type="date" placeholder="Add Date">
+                        </div>
+
+                        <div class="other-input">
+                            <label>Check Out</label>
+                            <input type="date" placeholder="Add Date">
+                        </div>
+
+                        <div class="other-input">
+                            <label>Guest</label>
+                            <input type="text" placeholder="Add Guest">
+                        </div>
+
+                       
+                        <button type="submit"><img src="images/search.png" alt=""></button>
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="sub_title">Exclusives</h2>
+            <div class="exclusives">
+                <div>
+                    <img src="images/image-1.png" alt="">
+                    <span>
+                        <h3>London</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-2.png" alt="">
+                    <span>
+                        <h3>Switzerland</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-3.png" alt="">
+                    <span>
+                        <h3>Australia</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-4.png" alt="">
+                    <span>
+                        <h3>France</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-5.png" alt="">
+                    <span>
+                        <h3>Amsterdam</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-6.png" alt="">
+                    <span>
+                        <h3>Netherlands</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-7.png" alt="">
+                    <span>
+                        <h3>New York</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-8.png" alt="">
+                    <span>
+                        <h3>Chicago</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-9.png" alt="">
+                    <span>
+                        <h3>San Francisco</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+
+                <div>
+                    <img src="images/image-10.png" alt="">
+                    <span>
+                        <h3>Shanghai</h3>
+                        <p>Start @ 250</p>
+                    </span>
+                </div>
+            </div>
+
+            <h2 class="sub_title">Trending Places</h2>
+            <div class="trending">
+                <div>
+                    <img src="images/Vietnam.webp" alt="">
+                    <h3>Vietnam</h3>
+                </div>
+
+                <div>
+                    <img src="images/phillipin.webp" alt="">
+                    <h3>Philippines</h3>
+                </div>
+
+                <div>
+                    <img src="images/Thailand.webp" alt="">
+                    <h3>Thailand</h3>
+                </div>
+
+                <div>
+                    <img src="images/Bali.webp" alt="">
+                    <h3>Indonesia</h3>
+                </div>
+            </div>
+
+            <div class="cta">
+                <h3>Sharing <br> Is Earning Now</h3>
+                <p>Great opportunity to make money by <br> sharing your extra space.</p>
+                <a href="#" class="cta_btn">Know More</a>
+            </div>
+
+            <h2 class="sub_title">Travellers Story</h2>
+            <div class="story">
+                <div class="col">
+                    <img src="images/story-1.png" alt="">
+                    <div class="layer">
+                        <p>Popular European countries with a budget of just </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/story-2.png" alt="">
+                    <div class="layer">
+                        <p>Popular European countries with a budget of just </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="images/story-3.png" alt="">
+                    <div class="layer">
+                        <p>Popular European countries with a budget of just </p>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="start_btn">Start Making Money</a>
+
+            
+            <div class="about_msg">
+                <div class="about_layer">
+                    <h2>About EverRest</h2>
+                    <p>Our website “EverRest” is a system that allows our users to exchange their available accommodations to suit their needs from traveling or partying.
+
+                    The reason why people should use our system is because the website allows them to have a chance of overviewing the place they are going to live for the next few days of their vacation in the most realistic way possible. “EverRest” allows them to ask for the availability of not only the house, but also what furniture the host can provide when they are staying. 
+                    
+                    
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a href="#" ><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#" ><i class="fa-brands fa-instagram-square"></i></i></a>
+                <a href="#" ><i class="fa-brands fa-twitter-square"></i></a>
+                <hr>
+                <p>Copyright something will be finish later</p>
+            </div>
+        </div>
+
+    <div class="modal" id="email-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="modal-content-left">
+                <img src="images/house_regis5.webp" id="modal-img" alt="">
+            </div>
+            <div class="modal-content-right">
+                <form class="modal-form" id="form">
+                    <h1>Get started with us today! Create your account by filling out of the information</h1>
+                    <div class="form-validation">
+                        <input type="text" class="modal-input" id="name" name="name" placeholder="Enter your name">
+                        <p>Error Message</p>
+                    </div>
+
+                    <div class="form-validation">
+                        <input type="email" class="modal-input" id="email" name="email" placeholder="Enter your email">
+                        <p>Error Message</p>
+                    </div>
+
+                    <div class="form-validation">
+                        <input type="password" class="modal-input" id="password" name="password" placeholder="Enter your password">
+                        <p>Error Message</p>
+                    </div>
+
+                    <div class="form-validation">
+                        <input type="password" class="modal-input" id="password-confirm" name="password" placeholder="Confirm your password">
+                        <p>Error Message</p>
+                    </div>
+                    <input type="submit" class="modal-input-btn" value="Sign up">
+                    <span class="modal-input-login">Already have an account ? Login <a href="">here</a> </span>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var navVar = document.getElementById("navbar");
+
+        function togglebtn(){
+            navbar.classList.toggle("hidemenu");
+        }
+
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+</html>

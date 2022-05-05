@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Staybnb</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/359626c004.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="images/logo.png" class="logo" alt="">
+            <ul class="nav-links">
+                <li><a href="#" >Popular Places</a></li>
+                <li><a href="#">Travel Outside</a></li>
+                <li><a href="#">Online Packages</a></li>
+            </ul>
+            <a href="#" class="register_btn">Credit point</a>
+            <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+        </nav>
+
+        <div class="container">
+            <h1>Become A House Owner </h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="list_container">
+            <div class="left_col">
+                <p>200+ Options</p>
+                <h1>House Registration Information</h1>
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/house_regis1.webp" alt="">
+                    </div>
+                    <div class="regis_info">
+                        <h3>Which type of house will you register ? </h3>
+                        <ul class="house_type">
+                           <li>Villa</li>
+                           <li>Hoster</li>
+                           <li>Flat</li>
+                           <li>House</li>
+                           <li>Guest</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/house_regis2.webp" alt="">
+                    </div>
+                    <div class="regis_info">
+                        <h3>Which space can the hier use in house ? </h3>
+                        <ul class="house_type">
+                           <li>Full House</li>
+                           <li>Seperate Room</li>
+                           <li>Big Room</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/house_regis3.webp" alt="">
+                    </div>
+                    <div class="regis_info">
+                        <h3>The address and location of the house ? </h3>
+                        <input class="house_input" type="text" placeholder="Your house address">
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/house_regis5.webp" alt="">
+                    </div>
+                    <div class="regis_info">
+                        <h3>Credit points to exchange your house ? </h3>
+                        <input class="house_input" type="text" placeholder="Your credit point">
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/house_regis4.webp" alt="">
+                    </div>
+                    <div class="regis_info">
+                        <h3>How many guest can stay in the house ? </h3>
+                        <ul class="house_number">
+                            <li>
+                               <h4>Guest</h4>
+                               <div class="number-_adjust">
+                                    <i class="fa-solid fa-plus" onclick="countUp()"></i>
+                                    <p id="counter">1</p>
+                                    <i class="fa-solid fa-minus" onclick="countDown()"></i>
+                               </div>
+                            </li>
+                            <li>
+                                <h4>Bed</h4>
+                                <div class="number-_adjust">
+                                    <i class="fa-solid fa-plus" ></i>
+                                    <p>1</p>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                             </li>
+                             <li>
+                                <h4>Bedroom</h4>
+                                <div class="number-_adjust">
+                                    <i class="fa-solid fa-plus" ></i>
+                                    <p>1</p>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                             </li>
+                             <li>
+                                <h4>Living room</h4>
+                                <div class="number-_adjust">
+                                    <i class="fa-solid fa-plus"></i>
+                                    <p>1</p>
+                                    <i class="fa-solid fa-minus"></i>
+                                </div>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="house">
+                    <div class="house_img">
+                        <img src="images/house_regis2.webp" alt="">
+                    </div>
+                    <div class="regis_info">
+                        <h3>Drop your house image here </h3>
+                        <div class="insert_pic">
+                           <img src="images/insert_pic.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                
+
+            <div class="right_col">
+                <div class="side_bar">
+                    <h2> Select Property</h2>
+                    <h3>Property Type</h3>
+                    <div class="filter">
+                        <input type="checkbox"><p>Swimming Pool</p> 
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Garden</p>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Fire Place</p> 
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Pool</p> 
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Camping area</p> 
+                    </div>
+
+                    <h3>Property Type</h3>
+                    <div class="filter">
+                        <input type="checkbox"><p>Wifi</p><i class="fa-solid fa-wifi"></i>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>TV</p><i class="fa-solid fa-tv"></i>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Air Conditioning</p><i class="fa-solid fa-snowflake"></i>
+                    </div>
+                    <div class="filter">
+                        <input type="checkbox"><p>Shower</p><i class="fa-solid fa-shower"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            let count=0;
+            function countUp(){
+                count=count+1;
+                let counter = document.getElementById('counter');
+                counter.innerText = count
+            }
+
+            function countDown(){
+                count=count-1;
+                let counter = document.getElementById('counter');
+                counter.innerText = count
+            }
+
+
+        </script>
+</body>
+</html>

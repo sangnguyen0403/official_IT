@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staybnb</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/359626c004.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar" class="navbar_white">
+        <img src="images/logo-red.png" class="logo" alt="">
+        <ul class="nav-links">
+            <li><a href="#" >Popular Places</a></li>
+            <li><a href="#">Travel Outside</a></li>
+            <li><a href="#">Online Packages</a></li>
+        </ul>
+        <a href="#" class="register_btn">View Credit</a>
+        <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
+    </nav>
+
+    <div class="house-detail">
+        <div class="house_title">
+            <h1>Twinclass Treehouse</h1>
+            <div class="row">
+                <div>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                    <span>245 Reviews</span>
+                </div>
+                <div>
+                    <p>Location: Baguio, Cordilera Administrative Region, Philippines</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="house_img">
+            <div class="img_1"><img src="images/tree1.webp" alt=""></div>
+            <div><img src="images/tree2.webp" alt=""></div>
+            <div><img src="images/tree3.webp" alt=""></div>
+            <div><img src="images/tree4.webp" alt=""></div>
+            <div><img src="images/tree5.webp" alt=""></div>
+        </div>
+        <div class="small_detail">
+            <h2>Entire rental unit hosted by Brandon</h2>
+            <p>4 guest &nbsp; 2 beds &nbsp; &nbsp; 2 bathrooms </p>
+            <h4>250 points/ day</h4>
+        </div>
+        <hr class="line">
+        <div class="form_info">
+            <form class="check_form">
+                <div>
+                    <label>Check-in</label>
+                    <input type="text" placeholder="Add Date">
+                </div>
+                <div>
+                    <label>Check-out</label>
+                    <input type="text" placeholder="Add Date">
+                </div>
+                <div class="people_field">
+                    <label>People</label>
+                    <input type="text" placeholder="2 guests">
+                </div>
+                <button type="submit">Check Availability</button>
+            </form>
+
+            <div class="price_info">
+                <div class="price_detail">
+                    <p>Point:</p>
+                    <span>250</span>
+                </div>
+
+                <div class="price_detail">
+                    <p>Service:</p>
+                    <span>50</span>
+                </div>
+                <hr>
+
+                <div class="price_detail">
+                    <p>Total:</p>
+                    <span>300</span>
+                </div>
+            </div>
+        </div>
+
+        <ul class="detail_list">
+            <li><i class="fas fa-home"></i>Entire Home
+                <span>You will have the entire flat for You</span>
+            </li>
+            <li><i class="fas fa-paint-brush"></i>Enhanced Clean
+                <span>This host has committed to our cleaning process</span>
+            </li>
+            <li><i class="fas fa-map-marker-alt"></i>Great Location
+                <span>90% of recent guests gave the location a 5 star rating</span>
+            </li>
+            <li><i class="fas fa-heart"></i>Great Check-in Experience
+                <span>100% of the recent guetss gave the check-in process a 5 star rating</span>
+            </li>
+        </ul>
+
+        <hr class="line">
+
+        <p class="house_desc">
+            <h4 class="house_desc-title">Tudor in the Pines</h4>
+            Tudor in the Pines is a spectacular estate in the Philippines comprised of seven (7) individual mansions within a guarded property, hosting a maximum of 30 guests. It is hidden within the lush greenery of Baguio City's pinewood forest. With the ease of many road entrances to and from the city, as well as to other Cordillera highland regions. Tudor in the Pines is an ideal home base for exploring the Philippines' northern marvels.
+        </p>
+
+        <hr class="line">
+
+        <div class="map">
+            <h3>Location on Map</h3>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61239.981496396285!2d120.55375549666005!3d16.399472401352735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3391a16879def13f%3A0x8edef534be3a75c0!2sBaguio%2C%20Benguet%2C%20Philippines!5e0!3m2!1svi!2s!4v1651515457816!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <b>Baguio, Cordillera Administrative Region, Philippines</b>
+            <p>It's like a home away from home</p>
+        </div>
+
+        <hr class="line">
+
+
+        <div class="property_container">
+            <div class="property_title">
+                <h3>Properties for you</h3>
+            </div>
+            <div class="property_list">
+                <div class="property_detail">
+                    <i class="fa fa-wifi"></i>
+                    <span>Wifi</span>
+                </div>
+
+                <div class="property_detail">
+                    <i class="fa fa-temperature-arrow-down"></i>
+                    <span>Air condition</span>
+                </div>
+
+                <div class="property_detail">
+                    <i class="fa fa-car"></i>
+                    <span>Garage</span>
+                </div>
+
+                <div class="property_detail">
+                    <i class="fa fa-briefcase-medical"></i>
+                    <span>Medical box</span>
+                </div>
+
+                <div class="property_detail">
+                    <i class="fa fa-fire-burner"></i>
+                    <span>Fireplace</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="line">
+
+
+        <div class="rating_review">
+            <div class="rating">
+                <h4>4.5 &#9733; <span>256 reviews</span></h4>
+                <button>Write review</button>
+            </div>
+
+            <div class="review_container">
+                <div class="review_detail">
+                    <div class="review_time">
+                        <img src="images/portrait1.jpg" alt="">
+                    
+                        <div class="review_person">
+                            <h4>Mhira</h4>
+                            <p>April, 2022</p>
+                        </div>
+                </div>
+                    <div class="review_msg">
+                        <p>
+                            We stayed in the treehouse for 3 days and 2 nights, and the whole experience was nothing short of enjoyable. Kuya Rey (the property manager) was so accomodating and corteous. They also gave us detailed guidelines and even recommendations on where to visit. The location itself was close to a lot of good eats as well. Overall, it was a pleasant stay, we will definitely book again on our next Baguio visit.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="review_detail">
+                    <div class="review_time">
+                        <img src="images/portrait2.jpg" alt="">
+                    
+                        <div class="review_person">
+                            <h4>Meliza</h4>
+                            <p>April, 2022</p>
+                        </div>
+                </div>
+                    <div class="review_msg">
+                        <p>Thank you so much po for accommodating us. And sharing a lot of beautiful places and great restaurants to see and try in Baguio. Kuya Rey is super accommodating and he is also a good photographer. Our favorite place that you suggested is Clinton Museum and ofcourse, Tudor in the Pines.</p>
+                    </div>
+                </div>    
+    
+                <div class="review_detail">
+                    <div class="review_time">
+                        <img src="images/portrait3.jpg" alt="">
+                    
+                        <div class="review_person">
+                            <h4>Liza</h4>
+                            <p>April, 2022</p>
+                        </div>
+                </div>
+                    <div class="review_msg">
+                        <p>We didnt make a mistake choosing this place for our Anniversary. Every corner is photo-worthy! Kuya Rey, their caretaker is also very accommodating. The owner is also very hands-on and would personally send food recommendations within Baguio. We’re looking forward to trying the Tudor House next time, with the entire clan.</p>
+                    </div>
+                </div>
+                
+                <div class="review_detail">
+                    <div class="review_time">
+                        <img src="images/portrait4.jpg" alt="">
+                    
+                        <div class="review_person">
+                            <h4>Andrew</h4>
+                            <p>April, 2022</p>
+                        </div>
+                </div>
+                    <div class="review_msg">
+                        <p>For a different kind of accommodation experience, tudor pines is truly extraordinary.</p>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        
+       
+
+        <hr class="line">
+
+        <div class="host">
+            <img src="images/host.png" alt="">
+            <div>
+                <h3>Hosted by Brandon</h3>
+                <p><span>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </span>&nbsp; &nbsp; 245 Reviews &nbsp; &nbsp; Response rate 100% &nbsp; &nbsp; Response time: 60min</p>
+            </div>
+        </div>
+
+        <a href="#" class="contact_host">Contact Host</a>
+
+        <div class="container">
+            <div class="footer">
+                <a href="#" ><i class="fa-brands fa-facebook-square"></i></a>
+                <a href="#" ><i class="fa-brands fa-instagram-square"></i></i></a>
+                <a href="#" ><i class="fa-brands fa-twitter-square"></i></a>
+                <hr>
+                <p>Copyright something will be finish later</p>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var navVar = document.getElementById("navbar");
+
+        function togglebtn(){
+            navbar.classList.toggle("hidemenu");
+        }
+
+    </script>
+</body>
+</html>
