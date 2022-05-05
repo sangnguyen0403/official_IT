@@ -569,7 +569,6 @@ nav .fa-bars{
     background: #ff5361;
     color: white;
     padding: 5px 10px;
-    transition: ease .30s;
 }
 
 .credit_btn:hover{
