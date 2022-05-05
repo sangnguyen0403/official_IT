@@ -563,6 +563,20 @@ nav .fa-bars{
     border-radius: 20px;
 }
 
+.credit_btn{
+    text-decoration: none;
+    border-radius: 20px;
+    background: #ff5361;
+    color: white;
+    padding: 5px 10px;
+    transition: ease .30s;
+}
+
+.credit_btn:hover{
+    background: transparent;
+    border: 0.5px solid #ff5361;
+    color: #ff5361;
+}
 
 .house_img{
     flex-basis: 40%;
