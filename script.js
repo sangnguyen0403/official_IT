@@ -46,91 +46,91 @@ let names = ["Afghanistan","Albania","Algeria","Andorra","Angola","Anguilla","An
 
 
 
-//Modal item
-const modal = document.getElementById('email-modal');
-const openBtn = document.querySelector('.main-btn');
-const closeBtn = document.querySelector('.close-btn');
+// //Modal item
+// const modal = document.getElementById('email-modal');
+// const openBtn = document.querySelector('.main-btn');
+// const closeBtn = document.querySelector('.close-btn');
 
-// Click events
-openBtn.addEventListener('click',() =>{
-  modal.style.display = 'block';
-});
+// // Click events
+// openBtn.addEventListener('click',() =>{
+//   modal.style.display = 'block';
+// });
 
-closeBtn.addEventListener('click',() => {
-  modal.style.display = 'none';
-});
+// closeBtn.addEventListener('click',() => {
+//   modal.style.display = 'none';
+// });
 
-window.addEventListener('click', (e) => {
-  if (e.target === modal){
-    modal.style.display = 'none';
-  }
-});
+// window.addEventListener('click', (e) => {
+//   if (e.target === modal){
+//     modal.style.display = 'none';
+//   }
+// });
 
-//Form validation
-const form = document.getElementById('form');
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const password = document.getElementById('password');
-const passwordConfirm = document.getElementById('password-confirm');
+// //Form validation
+// const form = document.getElementById('form');
+// const name = document.getElementById('name');
+// const email = document.getElementById('email');
+// const password = document.getElementById('password');
+// const passwordConfirm = document.getElementById('password-confirm');
 
-//Show error messsage
+// //Show error messsage
 
-function showError(input,message){
-  const formValidation = input.parentElement;
-  formValidation.className = "form-validation error";
+// function showError(input,message){
+//   const formValidation = input.parentElement;
+//   formValidation.className = "form-validation error";
 
-  const errorMessage = formValidation.querySelector('p');
-  errorMessage.innerText = message;
-}
+//   const errorMessage = formValidation.querySelector('p');
+//   errorMessage.innerText = message;
+// }
 
-//Show valid message 
-function showValid(input){
-  const formValidation = input.parentElement;
-  formValidation.className = "form-validation valid";
-}
+// //Show valid message 
+// function showValid(input){
+//   const formValidation = input.parentElement;
+//   formValidation.className = "form-validation valid";
+// }
 
-//Check required field
-function checkRequired(inputArr){
-  inputArr.forEach(function(input) {
-    if(input.value.trim() === ""){
-      showError(input, `${getFieldName(input)} is required`);
-    } else{
-      showValid(input);
-    }
-  })
-}
+// //Check required field
+// function checkRequired(inputArr){
+//   inputArr.forEach(function(input) {
+//     if(input.value.trim() === ""){
+//       showError(input, `${getFieldName(input)} is required`);
+//     } else{
+//       showValid(input);
+//     }
+//   })
+// }
 
-//Check length
-function checkLength(input, min, max){
-  if(input.value.length < min){
-    showError(input, `${getFieldName(input)} must be at least ${min} character`);
-  } else if(input.value.length > max){
-    showError(input, `${getFieldName(input)} must be at most ${max} character`);
-  }else{
-    showValid(input);
-  }
-}
+// //Check length
+// function checkLength(input, min, max){
+//   if(input.value.length < min){
+//     showError(input, `${getFieldName(input)} must be at least ${min} character`);
+//   } else if(input.value.length > max){
+//     showError(input, `${getFieldName(input)} must be at most ${max} character`);
+//   }else{
+//     showValid(input);
+//   }
+// }
 
-//Check Password Match
-function passwordMatch(firstpass,secondpass){
-  if(firstpass.value !== secondpass.value){
-    showError(secondpass, 'Password do not match');
-  }
-}
+// //Check Password Match
+// function passwordMatch(firstpass,secondpass){
+//   if(firstpass.value !== secondpass.value){
+//     showError(secondpass, 'Password do not match');
+//   }
+// }
 
-// Get fieldname
-function getFieldName(input){
-  return input.name.charAt(0).toUpperCase() + input.name.slice(1);
-}
+// // Get fieldname
+// function getFieldName(input){
+//   return input.name.charAt(0).toUpperCase() + input.name.slice(1);
+// }
 
-//Event Listeners
-form.addEventListener('submit', (e) =>{
-  e.preventDefault();
+// //Event Listeners
+// form.addEventListener('submit', (e) =>{
+//   e.preventDefault();
 
-  checkRequired([name, email, password, passwordConfirm]);
-  checkLength(name,3, 30);
-  checkLength(password, 8, 25);
-  checkLength(passwordConfirm, 8, 25);
-  passwordMatch(password,passwordConfirm);
+//   checkRequired([name, email, password, passwordConfirm]);
+//   checkLength(name,3, 30);
+//   checkLength(password, 8, 25);
+//   checkLength(passwordConfirm, 8, 25);
+//   passwordMatch(password,passwordConfirm);
   
-});
+// });
