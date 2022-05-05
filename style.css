@@ -70,7 +70,7 @@ nav{
 }
 
 .main-btn:hover{
-    background:#ff5361;
+    background:#659DBD;
     color: #fff;
     transform: translateY(-3px);
 }
@@ -114,7 +114,7 @@ nav{
 }
 
 .search_bar form button{
-    background: #ff5361;
+    background: #659DBD;
     width: 55px;
     height: 55px;
     border-radius: 50%;
@@ -232,7 +232,7 @@ nav{
 }
 
 .cta_btn{
-    background: #ff5361;
+    background: #659DBD;
     color: #fff;
     text-decoration: none;
     padding: 12px 30px;
@@ -302,7 +302,7 @@ nav{
 
 .start_btn{
     text-decoration: none;
-    background: #ff5361;
+    background: #659DBD;
     color: #fff;
     width: 80%;
     max-width: 350px;
@@ -318,8 +318,8 @@ nav{
 .start_btn:hover{
     transform: translateY(-10px);
     background: transparent;
-    color: #ff5361;
-    border: 0.5px solid #9f0036;
+    color: #659DBD;
+    border: 0.5px solid #4f96c0;
 }
 
 .about_msg{
@@ -523,7 +523,7 @@ nav .fa-bars{
 }
 
 .navbar_white .main-btn{
-    background: #ff5361;
+    background: #659DBD;
     color: #fff;
 }
 
@@ -566,15 +566,15 @@ nav .fa-bars{
 .credit_btn{
     text-decoration: none;
     border-radius: 20px;
-    background: #ff5361;
+    background: #659DBD;
     color: white;
     padding: 5px 10px;
 }
 
 .credit_btn:hover{
     background: transparent;
-    border: 0.5px solid #ff5361;
-    color: #ff5361;
+    border: 0.5px solid #659DBD;
+    color: #659DBD;
 }
 
 .house_img{
@@ -600,7 +600,7 @@ nav .fa-bars{
 }
 
 .house_info i{
-    color: #ff5361;
+    color: #659DBD;
     font-size: 18px;
     margin: 4px;
 }
@@ -657,7 +657,7 @@ nav .fa-bars{
 
 .side_bar-link a{
     color: #fff;
-    background: #ff5361;
+    background: #659DBD;
     text-decoration: none;
     border-radius: 20px;
     padding: 5px;
@@ -840,7 +840,7 @@ nav .fa-bars{
 }
 
 .house_title i{
-    color: #ff5361;
+    color: #659DBD;
     font-size: 14px;
 }
 
@@ -912,7 +912,7 @@ nav .fa-bars{
 }
 
 .check_form button{
-    background: #ff5361;
+    background: #659DBD;
     color: #fff;
     border: none;
     outline: none;
@@ -951,7 +951,7 @@ nav .fa-bars{
     position: absolute;
     top: 5px;
     left: -40px;
-    color: #ff5361;
+    color: #659DBD;
 }
 
 .price_detail{
@@ -1017,7 +1017,7 @@ nav .fa-bars{
 }
 
 .host i{
-    color: #ff5361;
+    color: #659DBD;
 
 }
 
@@ -1027,7 +1027,7 @@ nav .fa-bars{
     text-decoration: none;
     color: #555;
     padding: 15px 50px;
-    border: 1px solid #ff5361;
+    border: 1px solid #659DBD;
     border-radius: 8px;
     transition: ease .30s;
 }
@@ -1035,7 +1035,7 @@ nav .fa-bars{
 .contact_host:hover{
     transform: translateY(-5px);
     color: #fff;
-    background: #ff5361;
+    background: #659DBD;
 }
 
 .review_time{
@@ -1084,7 +1084,7 @@ nav .fa-bars{
     font-size: 25px;
     flex: 1;
     margin: 10px 0;
-    color: #ff5361
+    color: #659DBD;
 }
 
 .rating h4 span{
@@ -1094,7 +1094,7 @@ nav .fa-bars{
 }
 
 .rating button{
-    background: #ff5361;
+    background:#659DBD;
     color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
@@ -1320,6 +1320,6 @@ nav .fa-bars{
 
 .modal-input-login a{
     text-decoration: none;
-    color: #ff5361;
+    color: #659DBD;
     font-size: 600;
 }
