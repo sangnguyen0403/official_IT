@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/359626c004.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;500;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <nav id="navbar" class="navbar_white">
@@ -18,7 +19,7 @@
             <li><a href="#">Travel Outside</a></li>
             <li><a href="#">Online Packages</a></li>
         </ul>
-        <a href="#" class="credit_btn">View Credit</a>
+        <a href="#" class="credit_btn">View Credit <i class="fa-solid fa-user"></i></a>
         <i class="fa-solid fa-bars" onclick="togglebtn()"></i>
     </nav>
 
@@ -245,6 +246,56 @@
 
         <a href="#" class="contact_host">Contact Host</a>
 
+        <div class="chatbox-wrapper">
+            <div class="chatbox-toggle">
+                <i class='bx bx-message-dots'></i>
+            </div>
+            <div class="chatbox-message-wrapper">
+                <div class="chatbox-message-header">
+                    <div class="chatbox-message-profile">
+                        <img src="images/host.png" alt="" class="chatbox-message-image">
+                        <div>
+                            <h4 class="chatbox-message-name">Brandon</h4>
+                            <p class="chatbox-message-status">Online</p>
+                        </div>
+                    </div>
+                    <div class="chatbox-message-dropdown">
+                        <i class='bx bx-dots-vertical-rounded chatbox-message-dropdown-toggle'></i>
+                        <ul class="chatbox-message-dropdown-menu">
+                            <li>
+                                <a href="#">Search</a>
+                            </li>
+                            <li>
+                                <a href="#">Report</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="chatbox-message-content">
+                    <h4 class="chatbox-message-no-message">You don't have message yet!</h4>
+                    <!-- <div class="chatbox-message-item sent">
+                        <span class="chatbox-message-item-text">
+                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+                        </span>
+                        <span class="chatbox-message-item-time">08:30</span>
+                    </div>
+                    <div class="chatbox-message-item received">
+                        <span class="chatbox-message-item-text">
+                            Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Quod, fugiat?
+                        </span>
+                        <span class="chatbox-message-item-time">08:30</span>
+                    </div> -->
+                </div>
+                <div class="chatbox-message-bottom">
+                    <form action="#" class="chatbox-message-form">
+                        <textarea rows="1" placeholder="Type message..." class="chatbox-message-input"></textarea>
+                        <button type="submit" class="chatbox-message-submit"><i class='bx bx-send' ></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+
         <div class="container">
             <div class="footer">
                 <a href="#" ><i class="fa-brands fa-facebook-square"></i></a>
@@ -256,11 +307,18 @@
         </div>
 
     </div>
+    <script src="script.js"></script>
     <script>
         var navVar = document.getElementById("navbar");
 
         function togglebtn(){
             navbar.classList.toggle("hidemenu");
+        }
+
+        function openChat(){
+            document.getElementById('chatbox').style.display="block";
+            $('chat_btn').hide();
+
         }
 
     </script>
