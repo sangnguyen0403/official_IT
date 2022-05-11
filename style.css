@@ -577,12 +577,6 @@ nav .fa-bars{
     align-items: center;
 }
 
-.credit_btn:hover{
-    background: transparent;
-    border: 0.5px solid #659DBD;
-    color: #659DBD;
-}
-
 .credit_btn i{
     margin-left: 5px;
 }
@@ -1748,4 +1742,82 @@ input[type="radio"]:checked::before {
     font-weight: 600;
     padding: 16px;
     flex: 1;
+}
+
+/*----------Credit point----------*/
+.credit_wrap{
+    position: relative;
+    cursor: pointer;
+}
+
+.credit_wrap:hover .credit_history{
+    display: flex;
+}
+
+
+.credit_history:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right: 80px;
+    top: 15px;
+    border-width: 10px 15px;
+    border-style: solid;
+    border-color: transparent transparent blue transparent;
+}
+
+.credit_history{
+    position: absolute;
+    width: 400px;
+    top: calc(100% +20px);
+    right: -10px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 1px 3.125rem 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    cursor: default;
+    display: none;
+}
+
+.credit_history:after{
+    cursor: pointer;
+    content: "";
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+
+
+.credit_history h4{
+    text-align: left;
+    margin: 8px 0 8px 12px;
+    font-size: 1.4rem;
+}
+
+.credit_list{
+    padding: 0;
+    list-style: none;
+}
+
+.credit_list li{
+    padding: 10px;
+}
+
+.credit_list li:hover{
+    background: rgb(228,226,227);
+    cursor: pointer;
+}
+
+.credit_item-info{
+    display: flex;
+    align-items: center;
+}
+
+.credit_item-info p{
+    flex: 1;
+    padding: 10px
 }
