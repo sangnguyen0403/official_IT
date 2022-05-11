@@ -502,13 +502,13 @@ nav .fa-bars{
 }
 
 /*--------------Listing pages------------------*/
-.navbar_white{
-    background: #fff;
+.navbar_black{
+    background: #202020;
     box-shadow: 0 5px 10px rgba(0,0,0,0.06);
 }
 
 .navbar_white .nav-links li a{
-    color: #000;
+    color: #fff;
     position: relative;
 }
 
@@ -1831,7 +1831,7 @@ input[type="radio"]:checked::before {
     text-decoration: none;
     background: #659DBD;
     color: #fff;
-    border-radius: 20px;
+    border-radius: 10px;
     line-height: 30px;
 }
 
